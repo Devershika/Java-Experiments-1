@@ -16,6 +16,13 @@ public class UserInput {
                 double num2 = scanner.nextDouble();
                 performBasicOperation(choice, num1, num2, calculator);
                 break;
+
+            case 5:
+                System.out.println("Enter Fibonacci index: ");
+                int n = scanner.nextInt();
+                System.out.println("Fibonacci(" + n + ") = " + calculator.fibonacci(n));
+                break;
+
         }
     }
 
@@ -27,4 +34,6 @@ public class UserInput {
             case 4: System.out.println("Result: " + calculator.divide(a, b)); break;
         }
     }
+
+
 
